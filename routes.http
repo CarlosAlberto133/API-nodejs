@@ -1,0 +1,31 @@
+POST http://localhost:3333/aulas
+Content-type: application/json
+
+{
+    "title": "aula",
+    "description": "Esse é o primeiro aula",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/aulas
+
+###
+
+GET http://localhost:3333/aulas?search=node
+
+###
+
+PUT http://localhost:3333/aulas/848146b5-9e0a-4952-8ec0-cbdbae61a765
+Content-type: application/json
+
+{
+    "title": "aula 02",
+    "description": "Esse é a primeira aula editado",
+    "duration": 180
+}
+
+###
+
+DELETE  http://localhost:3333/aulas/848146b5-9e0a-4952-8ec0-cbdbae61a765
